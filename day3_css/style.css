@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+}
+
+/** Brand Color */
+.green{
+    color: #8bc34b;
+}
+
+.techblog{
+    background-color: transparent;
+    border: transparent;
+}
+
+/** HEADER */
+.header{
+    text-align: center;
+}
+
+/** Barra menù in alto */
+.menu{
+    background-color: #FAFAFA;
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+}
+
+.menu-item > a{
+    text-align: right;
+    color: #33691E;
+}
+
+/** Riquadri prodotti */
+.main{
+    margin-bottom: 50px;
+}
+
+.product{
+    width: 30%;
+    display: inline-block;
+    margin: 5px;
+}
+
+.product-img{
+    width: 100%;
+}
+
+.product-description{
+    margin: 0px;
+    border: 1px black;
+}
+
+.read-more{
+    float: right;
+    background-color: #8bc34b;
+    border: 0px;
+    color: white;
+}
+
+h2{
+    margin: 0px;
+}
+
+/** Footer */
+.footer{
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+    padding: 10px 20px;
+    background: linear-gradient(#282828, #000000);
+    color: #605e5e;
+    text-align: center;
+}
+
+/** Pagine prodotto */
+.product_name{
+    text-align: center;
+}
+
+.product_bigpic{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.product_details{
+    margin: 3%;
+    text-align: center;
+}
+
+.product_review{
+    text-align: left;
+    padding: 5% 10%;
+}
+
+.techspec{
+    display: inline-block;
+    text-align: left
+}
