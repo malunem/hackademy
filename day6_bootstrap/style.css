@@ -1,0 +1,91 @@
+/** */
+
+/** Rimuove i puntini dalla lista */
+li{
+    list-style-type: none;
+}
+
+/** Contact icons styling */
+.icon{
+    color: seagreen;
+}
+
+/** Bordo intorno all'immagine del profilo */
+img{
+    border: 5px solid brown;
+}
+
+/** Details text styling */
+.details{
+    color: seagreen;
+    font-size: small;
+}
+
+/** Margine a sinistra per visualizzare i rettangoli*/
+.marginleft{
+    margin-left: 40px;
+}
+
+/** Permette di posizionare lo pseudoelemento in relazione a questi */
+.fullname{
+    position: relative;
+}
+
+.job-start{
+    position: relative;
+}
+
+/** Crea e posiziona un rettangolo di fianco ai titoli */
+.fullname::before{
+    content: "";
+    height: 60px;
+    width: 40px;
+    position: absolute;
+    top: 0px;
+    left: -50px;
+    background-color: brown;
+}
+
+.job-start::before{
+    content: "";
+    height: 60px;
+    width: 40px;
+    position: absolute;
+    top: 0px;
+    left: -50px;
+    background-color: seagreen;
+}
+
+/** Media query per visualizzare la linea centrale da desktop */
+@media screen and (min-width: 768px){
+    
+    .work_exp{
+        border-right: 1px solid seagreen;
+    }
+}
+
+/** Sezione delle skills */
+.skill{
+    text-align: center;
+}
+
+.skillrow{
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+@media screen and (min-width: 768px){
+    .skill{
+        text-align: right;
+    }
+}
+
+.bg-seagreen{
+    background-color: seagreen;
+}
+
+/** Achievements details */
+.small{
+    font-size: small; 
+    margin-top: 0px;
+}
