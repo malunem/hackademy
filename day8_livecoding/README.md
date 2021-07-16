@@ -9,4 +9,4 @@ My page mobile and desktop:
 
 ![Lorem (2)](https://user-images.githubusercontent.com/63505124/125912716-307d72d7-08cd-41de-815c-926213de4d84.png)
 
-![Lorem (1)](https://user-images.githubusercontent.com/63505124/125912732-fd91a99f-6891-46ab-8d12-829b282bd45c.png)
+![Lorem (3)](https://user-images.githubusercontent.com/63505124/125913005-a9935c78-89c5-487c-b0d1-d606e630461c.png)
