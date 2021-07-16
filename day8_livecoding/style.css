@@ -1,0 +1,163 @@
+*{
+    font-family: 'Rajdhani', sans-serif;
+}
+
+h1, h2, h3, h4, .h1, .h2, .h3, .h4{
+    font-family: 'Nova Square', cursive;
+}
+
+:root{
+    --red: darkred;
+    --pink: #C67F7F;
+    --white: #ececec;
+
+}
+
+.text-red{
+    color: var(--red);
+}
+
+.bg-custom{
+    background-color: var(--white);
+}
+
+.logo{
+    width: 150px;
+    display: block;
+}
+
+.header{
+    background: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0)), url('./media/switzerland-862870_1920.jpg');
+    height: 90vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+@media screen and (max-width: 768px){
+    .header{
+        height: 50vh;
+    }    
+}
+
+.mountains{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.intro-row{
+    display: flex;
+    justify-content: center;
+}
+
+.intro-col{
+    margin: 30px 0px;
+    padding: 0 20px;
+}
+
+.intro{
+    text-align: center;
+    color: dimgrey;
+    font-weight: 500;
+    position: relative;
+}
+
+@media screen and (max-width: 768px){
+    .intro{
+        font-size: medium;
+    }
+}
+
+.phrase{
+    font-size: x-large;
+}
+
+.quote{
+    color: var(--red);
+    font-size: 70px;
+}
+
+/* .intro::before{
+    content: open-quote;
+    color: var(--red);
+    font-size: ;
+    font-style: italic;
+    position: absolute;
+    top: -35px;
+    left: 0px;
+}
+
+@media screen and (max-width: 768px){
+    .intro::before{
+        font-size: 30px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+}
+
+.intro::after{
+    content: close-quote;
+    color: var(--red);
+    font-size: 5rem;
+    font-style: italic;
+    position: absolute;
+    bottom: 0x;
+    right: 0px;
+}
+
+@media screen and (max-width: 768px){
+    .intro::after{
+        font-size: 3rem;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
+} */
+
+.icon-description{
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.line{
+    height: 5px;
+    width: 75%;
+    background-color: var(--red);
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.line::before{
+    content: "";
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: var(--white);
+    border: 3px solid var(--red);
+    position: absolute;
+    top: calc(50% - 12.5px);
+    left: calc(50% - 12.5px);
+}
+
+.cta-text{
+    font-size: large;
+    color: dimgrey;
+    font-weight: 500;
+}
+
+.button{
+    width: 40%;
+    border: 0px;
+    background-color: var(--red);
+    text-align: center;
+    vertical-align: middle;
+    color: var(--white);
+    padding: 5px;
+}
