@@ -1,0 +1,288 @@
+:root{
+    --red: darkred;
+    --pink: #C67F7F;
+    --white: #ececec;
+
+}
+
+*{
+    font-family: 'Rajdhani', sans-serif;
+}
+
+h1, h2, h3, h4, .h1, .h2, .h3, .h4{
+    font-family: 'Nova Square', cursive;
+    color: var(--red);
+}
+
+.text-red{
+    color: var(--red);
+}
+
+.bg-custom{
+    background-color: var(--white);
+}
+
+.logo{
+    width: 150px;
+    display: block;
+}
+
+/* Header section **/
+.header{
+    background: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0)), url('./media/switzerland-862870_1920.jpg');
+    height: 90vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+@media screen and (max-width: 768px){
+    .header{
+        height: 50vh;
+    }    
+}
+
+.mountains{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+/* Intro section **/
+.intro-row{
+    display: flex;
+    justify-content: center;
+}
+
+.intro-col{
+    margin: 30px 0px;
+    padding: 0 20px;
+}
+
+.intro{
+    text-align: center;
+    color: dimgrey;
+    font-weight: 500;
+    position: relative;
+}
+
+@media screen and (max-width: 768px){
+    .intro{
+        font-size: medium;
+    }
+}
+
+.phrase{
+    font-size: x-large;
+}
+
+.quote{
+    color: var(--red);
+    font-size: xx-large;
+}
+
+.icon-description{
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.line{
+    height: 5px;
+    width: 75%;
+    background-color: var(--red);
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.line::before{
+    content: "";
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: var(--white);
+    border: 3px solid var(--red);
+    position: absolute;
+    top: calc(50% - 12.5px);
+    left: calc(50% - 12.5px);
+}
+
+/* Call to action section **/
+
+.cta-text{
+    font-size: large;
+    color: dimgrey;
+    font-weight: 500;
+}
+
+.button-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('./media/trees2.png');
+    height: 40vh;
+    width: 100%;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.button{
+    width: 50vw;
+    height: 35px;
+    border: 0px;
+    background-color: var(--red);
+    color: var(--white);
+    font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+    .button{
+        width: 150px;
+    }
+}
+
+.trees{
+    width: 100%;
+}
+
+/** Timeline */
+
+.timeline{
+    margin-top: 30px;
+    margin-left: 50px;
+    position: relative;
+}
+
+.timeline::before{
+    content: "";
+    position: absolute;
+    left: -20px;
+    height: 100%;
+    width: 5px;
+    background-color: var(--red);
+}
+
+.timeline-item{
+    position: relative;
+    margin-top: 50px;
+}
+
+.timeline-item::before{
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid var(--red);
+    left: -27.5px;
+}
+
+@media screen and (min-width: 992px) {
+    .trees-2-col{
+        position: relative;
+    }
+    
+    .trees-2{
+        position: absolute;
+        bottom: 0px;
+        right: 50px;
+    }   
+}
+
+/* Team section */
+
+.team-row{
+    padding-top: 100px;
+}
+
+.team-member{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.team-img{
+    border-radius: 50%;
+    border: 2px solid var(--red);
+    padding: 7px;
+    background-color: white;
+}
+
+.team-name{
+    color: var(--red);
+    margin-top: 10px;
+}
+
+.team-info{
+    font-size: small;
+    text-align: center;
+}
+
+.team-social{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    color: var(--red);
+}
+
+/* Benefit */
+
+.benefit-img{
+    border-radius: 50%;
+    border: 2px solid var(--red);
+    padding: 7px;
+    background-color: white;
+}
+
+.redtrees-col{
+    height: 25vh;
+    position: relative;
+    padding: 0;
+}
+
+@media  screen and (min-width: 768px) {
+    .redtrees-col{
+        height: 50vh;
+    }
+}
+
+.redtrees{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+} 
+
+/* Footer */
+
+.footer-row{
+    background-color: var(--red);
+}
+
+.footer-text{
+    color: white;
+}
+
+.footer-title{
+    font-weight: 500;
+}
+
+.footer-small{
+    font-size: small;
+}
+
+.footer-ul{
+    font-size: small;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-col{
+        display: flex;
+    }
+}
