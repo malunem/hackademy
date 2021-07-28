@@ -1,0 +1,21 @@
+.wrapper {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    border: 2px dashed #c655cf;
+    position: relative;
+    top: 100px;
+    left: 100px;
+    color: grey;
+}
+
+.child {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: linear-gradient(120deg, #4e3894, #c655cf);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
