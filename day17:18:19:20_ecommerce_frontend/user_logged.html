@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Boostrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="./style.css">
+
+    <title>User Logged</title>
+</head>
+<body class="light-background">
+        <!-- Navbar -->
+
+    <!-- First navbar row -->
+    <nav class="navbar navbar-expand-md dark-background">
+        <div class="container-fluid">
+        <span class="navbarLogo p-2">
+            <i class="fas fa-bolt fa-2x accent-color"></i>
+            <h1 class="d-inline">Presto</h1>
+        </span>
+
+        <div class="navbar-toggler" data-bs-toggle="collapse">
+            <a class="collapsed-icons" href="#">
+                <i class="fas fa-search"></i>
+            </a>
+            <a class="collapsed-icons" href="#">
+                <i class="fas fa-user"></i>
+            </a>
+            <a class="collapsed-icons" href="#">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        
+        <!-- Navbar search-->
+        <form class="d-flex mx-auto">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn searchButton" type="submit">Search</button>
+        </form>    
+        
+        <!-- Navbar links -->
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link" href="#">Accedi</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Registrati</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-shopping-cart"></i>
+                    Carrello
+                </a>
+            </li>
+        </ul>
+        </div>
+    </div>
+    </nav>
+
+    <!-- Second navbar row -->
+    <nav class="navbar secondary-background">
+        <div class="container-fluid categories">   
+            
+            <!-- Categories -->
+            <a class="" href="./products.html">Categoria 1</a>
+            <a class="" href="#">Categoria 2</a>
+            <a class="" href="#">Categoria 3</a>
+            <a class="" href="#">Categoria 4</a>
+        </div>
+    </nav>
+
+    <!-- main content -->
+    <main>
+
+        <div class="container-fluid">
+            
+            <!-- Public info -->
+            <div class="row d-flex justify-content-center m-5">
+                <div class="col-12 col-md-4">
+                    <img src class="img-fluid user-pic" alt="foto profilo">
+                </div>
+                <div class="col-12 col-md-8">
+                    <h1 class="user-name">
+                        <!--JS dynamic content-->
+                    </h1>
+                    <p class="user-city">
+                        <!--JS dynamic content-->
+                    </p>
+                    <p class="user-year">
+                        <!--JS dynamic content-->
+                    </p>
+                </div>
+            </div>
+
+             <!-- Private info -->
+            <div class="row p-5">
+                <div class="col-12">
+                    <h3>Le tue vendite:</h3>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                  <th scope="col"></th>
+                                  <th scope="col">ID Prodotto</th>
+                                  <th scope="col">Titolo</th>
+                                  <th scope="col">Data</th>
+                                  <th scope="col">Status</th>
+                                </tr>
+                              </thead>
+                              <tbody class="table-sell">
+                                  <!--JS dynamic content (displayTableSell function)-->
+                              </tbody>
+                        </table>
+                      </div>
+                </div>
+            </div>
+            <div class="row p-5">
+                <div class="col-12">
+                    <h3>I tuoi acquisti:</h3>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                  <th scope="col"></th>
+                                  <th scope="col">Prodotto</th>
+                                  <th scope="col">Prezzo</th>
+                                  <th scope="col">Venditore</th>
+                                  <th scope="col">Categoria</th>
+                                </tr>
+                              </thead>
+                              <tbody class="table-buy">
+                                  <!--JS dynamic content (displayTableBuy function)-->
+                              </tbody>
+                        </table>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row footer-links">
+                <div class="col-6 col-md-3">
+                      <p>Aiuto</p>
+                      <ul>
+                          <li><a href="#">Assistenza</a></li>
+                          <li><a href="#">Regole</a></li>
+                          <li><a href="#">Sicurezza</a></li>
+                          <li><a href="#">Condizioni</a></li>
+                      </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                      <p>About</p>
+                      <ul>
+                          <li><a href="#">Chi siamo</a></li>
+                          <li><a href="#">Lavora con noi</a></li>
+                          <li><a href="#">Sostenibilità</a></li>
+                          <li><a href="#">Magazine</a></li>
+                      </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                      <p>Seguici su</p>
+                      <ul>
+                          <li><a href="#">
+                              <i class="fab fa-facebook"></i>
+                              Facebook
+                          </a></li>
+                          <li><a href="#">
+                              <i class="fab fa-instagram"></i>
+                              Instagram
+                          </a></li>
+                          <li><a href="#">
+                              <i class="fab fa-twitter"></i>
+                              Twitter
+                          </a></li>
+                          <li><a href="#">
+                              <i class="fab fa-youtube"></i>
+                              YouTube
+                          </a></li>
+                      </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                      <p>Scarica l'app</p>
+                      <ul>
+                          <li><a href="#">
+                              <i class="fab fa-android"></i>
+                              Android</a></li>
+                          <li><a href="#">
+                              <i class="fab fa-apple"></i>
+                              iOS</a></li>
+                      </ul>
+                </div>
+            </div>  
+            <div class="row">
+                <div class="col-12 footer-logo">
+                    <i class="fas fa-bolt"></i>
+                    <p class="d-inline">Presto</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 footer-company">
+                    <p>© 2021 Presto.it - P.IVA 12345678901</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Font awesome javascript -->
+    <script src="https://kit.fontawesome.com/4e7971e2a5.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Custom Javascript-->
+    <script src="./main.js"></script>
+
+    <!-- User Javascript-->
+    <script src="./user_logged.js"></script>
+
+</body>
+</html>
